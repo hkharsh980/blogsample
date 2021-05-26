@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Form</title>
+	<style>
+		lable{
+			display: inline-block;
+			width: 200px;
+			text-align: right;
+			float: left;
+			margin: 10px 5px;
+			clear: left;
+		}
+		.formpage{
+			width: 500px;
+			height: 500px;
+			background-color: lightgreen;
+			display: inline-block;
+			margin: 9% 0%;
+			
+		}
+		/*blockquote{
+			width: 500px;
+		}*/
+		fieldset{
+			padding: 0px;
+		}
+		input, select, textarea{
+			text-align: center;
+			vertical-align: middle;
+			margin: 10px 5px;
+
+		}
+	</style>
+</head>
+<body>
+<center>
+<div class="formpage">
+<form action="submit.php" method="post">
+	<fieldset>
+		<legend style="text-align: center;">Personal Information</legend>
+	<lable for="fname">First Name:</lable>
+	<input type="text" name="fname" autofocus="0" required="" id="fname">
+	<br>
+	<lable for="lname">Last Name:</lable>
+	<input type="text" name="lname" required="" id="lname">
+	<br>
+	<lable for="Email">Email:</lable>
+	<input type="Email" name="mail" placeholder="Enter a valid Email" required="" id="Email">
+	<br>
+	<lable for="Phone">Phone:</lable>
+	<input type="tel" name="number" id="Phone">
+	<br>
+	<lable for="Gender">Gender:</lable>
+	<input type="radio" name="radio" value="m" id="Gender">
+	Male
+	<input type="radio" name="radio" value="f" id="Gender">
+	Female
+	<br>
+	</fieldset>
+	<lable for="Date">Date:</lable>
+	<input type="Date" name="Date" id="Date"><br>
+	<lable for="dropdown">Conneccting for:</lable>
+	<select name="dropdown" id="dropdown">
+	<option>Enquiry</option>
+	<option>Feedback</option>
+	<option>Complaint</option>
+	</select><br>
+	<lable for="message">Message:<br></lable>
+	<textarea placeholder="Enter your message" id="message"></textarea>	<br>
+	<input type="submit" value="Send" id="Send">
+</form>
+</div>
+</center>
+</body>
+</html>
